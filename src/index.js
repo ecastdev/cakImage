@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import { orange, purple } from '@mui/material/colors';
-import { RouterProvider, createHashRouter } from 'react-router-dom';
-import ErrorPage from './error';
+// import { RouterProvider, createHashRouter } from 'react-router-dom';
+// import ErrorPage from './error';
 
 // import { NextUIProvider } from '@nextui-org/react';
 
@@ -26,19 +26,20 @@ const theme = createTheme({
 }
 
 )
- const router = createHashRouter([
-  {
-    path: '/',
-    element: <App/>,
-    errorElement:<ErrorPage/>,
+//  const router = createHashRouter([
+//   {
+//     path: '/',
+//     element: <App/>,
+//     errorElement:<ErrorPage/>,
    
-  }
- ])
+//   }
+//  ])
 root.render(
 
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
+        <App/>
+      {/* <RouterProvider router={router} /> */}
     </ThemeProvider>
    
   </React.StrictMode>
