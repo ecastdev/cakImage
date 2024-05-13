@@ -21,7 +21,7 @@ export default function Landing(){
                         </p>
                 </div>
             <div className="top-24">
-            <Button color="purple">Get us</Button>
+            <Button color="blue" className="bg-sky-600">Subscribe</Button>
 
             </div>
             

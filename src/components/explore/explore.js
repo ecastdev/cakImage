@@ -1,5 +1,6 @@
 import { behindScene, secondimgae, thirdimage } from "../assests/assest";
 import React, { useState, useEffect } from 'react';
+import Fab from '@mui/material/Fab';
 
 import { Carousel } from 'primereact/carousel';
 
@@ -42,7 +43,17 @@ export default function Explore(){
 
     const productTemplate = (slide) => {
         return (
-            <img src={slide.image} alt="explore" className="rounded-lg w-80 h-80 ml-5" />
+            <>
+               <img src={slide.image} alt="explore" className=" group relative rounded-lg w-80 h-80 ml-5 hover:opacity-30" />
+               <div className=" transition  text-center transform mt-16 
+                translate-y-8 ease invisible    absolute group-hover:visible pr-10 m1-4
+                text-white  group-hover:translate-y-0 rounded-full focus:ring-2 focus:ring-purple-700 focus:ring-opacity-50 ">
+                <Fab variant="extended" color="secondary" >
+                        {/* <NavigationIcon sx={{ mr: 1 , color:'secondary'}} /> */}
+                                Enroll
+                    </Fab> 
+              </div>
+            </>
         );
     };
 
