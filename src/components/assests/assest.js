@@ -11,4 +11,6 @@ import summerImage from './summer image.avif';
 import tableImage from './table image.avif';
 import filmMaking from './film making.avif';
 import coveringRing from './covering ring.avif';
-export {cakLogo, cakPerson,behindScene,secondimgae,thirdimage, ring,musicProduct,musicproduct2,summerImage,tableImage,filmMaking,coveringRing,chikoswe};
+import aboutAnime from './27712.jpg';
+import about2 from './Facebook cover - 1.png';
+export {cakLogo,aboutAnime,about2, cakPerson,behindScene,secondimgae,thirdimage, ring,musicProduct,musicproduct2,summerImage,tableImage,filmMaking,coveringRing,chikoswe};

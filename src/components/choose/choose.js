@@ -4,11 +4,11 @@ import { Button, Card } from "flowbite-react";
 export default function Choose(){
     return(
         <div className="flex flex-col items-center mt-20">
-        <h1 className="text-6xl text-sky-800 text-center underline uppercase font-subt"> 
+        <h1 className="text-3xl lg:text-6xl text-sky-800 text-center underline uppercase font-subt"> 
             wHY CHOOSE US
         </h1>
-            <div className="flex bg-slate-800 shadow-2xl  shadow-slate-800 h-96 w-3/4 justify-center items-center gap-3 rounded-2xl overflow-hidden mt-10">
-                <img src={cakPerson} alt="cak- image person" className="w-80 h-full contrast-100"/>
+            <div className="flex flex-col lg:flex-row   bg-slate-800 shadow-2xl  shadow-slate-800 h-auto lg:h-96 w-3/4 justify-center items-center gap-3 rounded-2xl overflow-hidden mt-10">
+                <img src={cakPerson} alt="cak- image person" className="w-80 h-80 lg:h-full contrast-100"/>
                 {/* card 1 */}
                 <Card className="max-w-80 max-h-80 bg-sky-700">
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -29,7 +29,7 @@ export default function Choose(){
                     </Button>
                     </Card>
                     {/* card 2 */}
-                                <Card className="max-w-80 bg-sky-600">
+                                <Card className="max-w-80 bg-sky-600 mb-16 lg:mb-0">
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     READY TO WORK ANYWEHRE
                 </h5>

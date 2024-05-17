@@ -8,35 +8,21 @@ import Landing2 from './components/Landing/landing2';
 import Choose from './components/choose/choose';
 import Explore from './components/explore/explore';
 import Encounter from './components/encounter/encouinter';
+import About from './components/About/about';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 
 
 function App() {
   return(
-    <div className='w-full h-full  rounded-bl-3xl'>    
+    <div className='w-full h-full  bg-slate-300'>    
        <Navbarr/>
-       <div id='landing' className='flex bg-hero bg-center bg-no-repeat bg-cover h-screen items-center justify-around'>
-            <div className='mt-10'>
-              <Landing/>
-            </div>
-            {/* the image */}
-            <div className='mt-10'>
-              <Landing2/>
-            </div>
-       </div>
-       {/* choose us */}
-       <Choose/>
-       {/* explore */}
-       <div className='grid place-content-center'>
-         <Explore/>
+       <Outlet/>
+       {/*  */}
 
-
+       <div>
+        footer
        </div>
-       
-       {/* encounter our services */}
-       <Encounter/>
-      
     </div>
   );
-
 }
 export default App;

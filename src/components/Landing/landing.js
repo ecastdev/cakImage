@@ -5,7 +5,7 @@ export default function Landing(){
     return(
         <div className="flex flex-col items-center justify-space-between gap-10">
             <div>
-                    <h1 className=" text-center text-white  text-7xl font-extrabold">
+                    <h1 className=" text-center text-white text-4xl mt-14 lg:mt-0 lg:text-7xl font-extrabold">
                         Bring <span className="text-sky-600"> <br/>to us</span> and we will <br/>
                         <span className="text-sky-600">Produce</span> <br/>  for you
                     </h1>
